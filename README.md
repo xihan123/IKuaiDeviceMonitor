@@ -68,8 +68,8 @@
 
 ## 截图
 
-![1](ScreenShot\ScreenShot_2025-11-11_195824_008.png)
-![2](ScreenShot\ScreenShot_2025-11-11_195858_959.png)
+![1](ScreenShot/ScreenShot_2025-11-11_195824_008.png)
+![2](ScreenShot/ScreenShot_2025-11-11_195858_959.png)
 
 ## 常见问题
 
