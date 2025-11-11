@@ -1,0 +1,18 @@
+<Window x:Class="IKuaiDeviceMonitor.Views.ToastWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Topmost="True" ShowInTaskbar="False" SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize">
+    <Border Background="{DynamicResource SystemControlBackgroundAccentBrush}"
+            CornerRadius="8" Padding="16" Margin="10"
+            MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="20" ShadowDepth="0" Opacity="0.5" />
+        </Border.Effect>
+        <StackPanel Width="300">
+            <TextBlock x:Name="TitleText" FontSize="16" FontWeight="Bold" Foreground="White" />
+            <TextBlock x:Name="MessageText" FontSize="13" Foreground="White" Margin="0,8,0,0" TextWrapping="Wrap" />
+        </StackPanel>
+    </Border>
+</Window>

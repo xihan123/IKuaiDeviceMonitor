@@ -1,0 +1,39 @@
+<Window x:Class="IKuaiDeviceMonitor.Views.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        Title="设置" Height="500" Width="500" WindowStartupLocation="CenterOwner">
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <TextBlock Text="路由器设置" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,0,0,10" />
+            <TextBlock Text="主机地址:" />
+            <TextBox x:Name="HostTextBox" Margin="0,5,0,10" />
+            <TextBlock Text="端口:" />
+            <TextBox x:Name="PortTextBox" Margin="0,5,0,10" />
+            <CheckBox x:Name="HttpsCheckBox" Content="使用 HTTPS" Margin="0,0,0,10" />
+            <TextBlock Text="用户名:" />
+            <TextBox x:Name="UsernameTextBox" Margin="0,5,0,10" />
+            <TextBlock Text="密码:" />
+            <PasswordBox x:Name="PasswordBox" Margin="0,5,0,20" />
+
+            <TextBlock Text="监控设置" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,10,0,10" />
+            <TextBlock Text="检查间隔 (毫秒):" />
+            <TextBox x:Name="IntervalTextBox" Margin="0,5,0,20" />
+
+            <TextBlock Text="通知设置" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,10,0,10" />
+            <CheckBox x:Name="NotificationCheckBox" Content="启用通知" Margin="0,0,0,10" />
+            <CheckBox x:Name="FullscreenCheckBox" Content="全屏时禁用通知" Margin="0,0,0,20" />
+
+            <TextBlock Text="应用设置" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,10,0,10" />
+            <CheckBox x:Name="StartupCheckBox" Content="开机自启动" Margin="0,0,0,10" />
+            <CheckBox x:Name="MinimizeCheckBox" Content="最小化到托盘" Margin="0,0,0,20" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="保存" Click="Save_Click" Style="{StaticResource AccentButtonStyle}" Width="80"
+                        Margin="0,0,10,0" />
+                <Button Content="取消" Click="Cancel_Click" Width="80" />
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
